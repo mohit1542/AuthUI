@@ -2,11 +2,10 @@ import React, { Component } from 'react'
 import { 
     Text, 
     View, 
-    Button,
-     Dimensions, 
-     StyleSheet,
-     Image,
-     TouchableOpacity,
+    Dimensions, 
+    StyleSheet,
+    TouchableOpacity,
+    StatusBar
 } from 'react-native'
 import { LinearGradient } from 'expo-linear-gradient';
 import { MaterialIcons } from '@expo/vector-icons'; 
@@ -16,7 +15,7 @@ import * as Animatable from 'react-native-animatable'
 const SplashScreen =({navigation})=>{
     return (
       <View style={styles.container}>
-
+            <StatusBar backgroundColor={'#009387'} barStyle='light-content' />
             <View style= {styles.header}>
                 <Animatable.Image
                     animation={'bounceIn'}

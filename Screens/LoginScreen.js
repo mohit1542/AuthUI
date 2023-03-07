@@ -12,12 +12,10 @@ import {
      StatusBar
 } from 'react-native'
 import { LinearGradient } from 'expo-linear-gradient';
-import { MaterialIcons } from '@expo/vector-icons'; 
 import Feather from 'react-native-vector-icons/Feather'
 import FontAwesome from 'react-native-vector-icons/FontAwesome'
 import * as Animatable from 'react-native-animatable'
-import { FlatList } from 'react-native-gesture-handler';
-import { setStatusBarStyle } from 'expo-status-bar';
+
 
 const LoginScreen =({navigation})=>{
 

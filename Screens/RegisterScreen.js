@@ -2,24 +2,17 @@ import React, { Component, useState } from 'react'
 import { 
     Text, 
     View, 
-    Button,
-     Dimensions, 
-     StyleSheet,
-     Image,
-     TouchableOpacity,
-     Platform,
-     TextInput,
-     StatusBar
+    StyleSheet,
+    TouchableOpacity,
+    TextInput,
+    StatusBar
 } from 'react-native'
 import { LinearGradient } from 'expo-linear-gradient';
-import { MaterialIcons } from '@expo/vector-icons'; 
 import Feather from 'react-native-vector-icons/Feather'
 import FontAwesome from 'react-native-vector-icons/FontAwesome'
 import * as Animatable from 'react-native-animatable'
-import { FlatList } from 'react-native-gesture-handler';
-import { setStatusBarStyle } from 'expo-status-bar';
 
-const LoginScreen =({navigation})=>{
+const RegistrationScreen =({navigation})=>{
 
     const [data, setData] = React.useState({
         email:'',
@@ -79,7 +72,7 @@ const LoginScreen =({navigation})=>{
       <View style={styles.container}>
             <StatusBar backgroundColor={'#009387'} barStyle='light-content' />
         <View style={styles.header}>
-            <Text style={styles.text_header}>Register now</Text>
+            <Text style={styles.text_header}>Register Now!</Text>
         </View>
 
         <Animatable.View 
@@ -203,7 +196,7 @@ const LoginScreen =({navigation})=>{
     )
 }
 
-export default LoginScreen
+export default RegistrationScreen
 
 
 const styles =StyleSheet.create({
@@ -215,7 +208,7 @@ const styles =StyleSheet.create({
         flex:1,
         justifyContent:'flex-end',
         paddingHorizontal:20,
-        paddingBottom:30
+        paddingBottom:30,
     },
     footer: {
         flex:3,
@@ -242,7 +235,7 @@ const styles =StyleSheet.create({
         paddingBottom:5,
     },
     textInput:{
-        flexlex:1,
+        flex:1,
         color:'#05375a',
         marginTop:-5,
         paddingLeft:10,
